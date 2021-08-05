@@ -52,10 +52,10 @@ oracle/database:11.2.0.2-xe
 ```
 
 ทดสอบการเชื่อมต่อ
-Host: localhost
-Port: 1521
-Database: XE
-Use SID
-User name: SYS
-Role: SYSDBA
-Password: 12345
+- Host: localhost
+- Port: 1521
+- Database: XE
+- Use SID
+- User name: SYS
+- Role: SYSDBA
+- Password: 12345
