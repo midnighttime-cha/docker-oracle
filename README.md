@@ -1,4 +1,4 @@
-# วิธีติดทำ Oracle เวอร์ชั่นต่างๆ ด้วย oracle-image
+# วิธีติดตั้ง Oracle เวอร์ชั่นต่างๆ ด้วย Docker image โดย Oracle official
 
 ทำการ Download file ติดตั้ง
 - [11.2.0.2](https://mega.nz/file/fkYCxLCb#uUfozWIKKf75FXJmv0hIFh8S7Oc0QgugV44PFsVBioc)
