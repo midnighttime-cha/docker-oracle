@@ -41,7 +41,7 @@ cp ./oracle-xe-11.2.0-1.0.x86_64.rpm.zip ./docker-images/OracleDatabase/SingleIn
 
 เมื่อทำการ Build เรียบร้อยสามารถ ทำการ Run docker ได้ด้วยคำสั่ง
 ```bash
-docker run --name OracleXE \
+docker run --name oracle \
 --shm-size=1g \
 -p 1521:1521 \
 -p 8081:8080 \
