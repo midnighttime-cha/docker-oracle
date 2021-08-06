@@ -41,7 +41,8 @@ cp ./oracle-xe-11.2.0-1.0.x86_64.rpm.zip ./docker-images/OracleDatabase/SingleIn
 
 เมื่อทำการ Build เรียบร้อยสามารถ ทำการ Run docker ได้ด้วยคำสั่ง
 ```bash
-docker run --name oracle \
+# Express edition
+docker run --name oracle-xe \
 --shm-size=1g \
 -p 1521:1521 \
 -p 8081:8080 \
@@ -52,6 +53,19 @@ docker run --name oracle \
 -v oracle-data:/u01/app/oracle/oradata \
 --restart=always \
 oracle/database:11.2.0.2-xe
+
+# Enterpeise
+docker run --name oracle-ee \
+--shm-size=1g \
+-p 1521:1521 \
+-p 8081:8080 \
+-e ORACLE_PWD=12345 \
+-e ORACLE_ALLOW_REMOTE=true \
+-e ORACLE_DISABLE_ASYNCH_IO=true \
+-e ORACLE_ENABLE_XDB=true \
+-v oracle-data:/opt/oracle/oradata \
+--restart=always \
+oracle/database:11.2.0.2-ee
 ```
 
 ทำการ เพิ่ม Memory ให้กับ docker
